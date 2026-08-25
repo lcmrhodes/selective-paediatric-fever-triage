@@ -1,0 +1,25 @@
+Strategy,Metric,Raw n/N
+Stage 1 + oxygen saturation,All assigned Green,552/824
+Stage 1 + oxygen saturation,All assigned Amber,88/824
+Stage 1 + oxygen saturation,All assigned Red,184/824
+Stage 1 + oxygen saturation,Severe assigned Green,2/36
+Stage 1 + oxygen saturation,Severe assigned Amber,4/36
+Stage 1 + oxygen saturation,Severe assigned Red,30/36
+Stage 1 + oxygen saturation + sTREM-1,All assigned Green,571/824
+Stage 1 + oxygen saturation + sTREM-1,All assigned Amber,72/824
+Stage 1 + oxygen saturation + sTREM-1,All assigned Red,181/824
+Stage 1 + oxygen saturation + sTREM-1,Severe assigned Green,2/36
+Stage 1 + oxygen saturation + sTREM-1,Severe assigned Amber,5/36
+Stage 1 + oxygen saturation + sTREM-1,Severe assigned Red,29/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP,All assigned Green,578/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP,All assigned Amber,70/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP,All assigned Red,176/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP,Severe assigned Green,2/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP,Severe assigned Amber,6/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP,Severe assigned Red,28/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,All assigned Green,579/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,All assigned Amber,60/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,All assigned Red,185/824
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,Severe assigned Green,2/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,Severe assigned Amber,4/36
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,Severe assigned Red,30/36

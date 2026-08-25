@@ -1,0 +1,22 @@
+{
+  "name": "spot-sepsis-stage2-pwa",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export:model": "Rscript tools/export_browser_model.R models/browser_model_bundle.json",
+    "check:model": "node scripts/check-model-bundle.mjs",
+    "build": "node scripts/build-pwa.mjs",
+    "serve": "node scripts/serve-static.mjs",
+    "test": "tsx --test tests/browser/engine.test.ts tests/browser/parity.test.ts",
+    "test:pwa": "npm run build && tsx --test tests/browser/pwa-build.test.ts",
+    "test:parity": "Rscript tools/write_browser_parity_reference.R && tsx --test tests/browser/parity.test.ts",
+    "test:all": "npm run check:model && npm test && npm run test:parity && npm run test:pwa"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.0",
+    "esbuild": "0.25.9",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2"
+  }
+}

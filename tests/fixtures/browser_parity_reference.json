@@ -1,0 +1,4795 @@
+{
+  "reference_implementation": "R",
+  "fixture_origin": "fixed manual and deterministic synthetic inputs only",
+  "participant_rows_included": false,
+  "tolerances": {
+    "stage1_features": 9.9999999999999998e-13,
+    "probability": 9.9999999999999998e-13,
+    "weight_for_age": 9.9999999999999998e-13
+  },
+  "stage1": [
+    {
+      "id": "fixed_green",
+      "input": {
+        "age.months": 36,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": 0,
+        "cidysymp": 2,
+        "not.alert": 0,
+        "hr.all": 100,
+        "rr.all": 24,
+        "envhtemp": 37,
+        "crt.long": 0
+      },
+      "features": [
+        36,
+        0,
+        0,
+        0,
+        2,
+        0,
+        100,
+        24,
+        37,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.0036185979843139648,
+      "probability": 8.69871376922218e-05,
+      "classification": "GREEN"
+    },
+    {
+      "id": "fixed_amber",
+      "input": {
+        "age.months": 60,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": 2,
+        "cidysymp": 8,
+        "not.alert": 1,
+        "hr.all": 150,
+        "rr.all": 55,
+        "envhtemp": 36.5,
+        "crt.long": 0
+      },
+      "features": [
+        60,
+        0,
+        0,
+        2,
+        8,
+        1,
+        150,
+        55,
+        36.5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.044959664344787598,
+      "probability": 0.0099246276767474065,
+      "classification": "AMBER"
+    },
+    {
+      "id": "fixed_red",
+      "input": {
+        "age.months": 12,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -3,
+        "cidysymp": 7,
+        "not.alert": 1,
+        "hr.all": 180,
+        "rr.all": 60,
+        "envhtemp": 39.5,
+        "crt.long": 1
+      },
+      "features": [
+        12,
+        1,
+        1,
+        -3,
+        7,
+        1,
+        180,
+        60,
+        39.5,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.1314399242401123,
+      "probability": 0.080226052062251987,
+      "classification": "RED"
+    },
+    {
+      "id": "fixed_missing_values",
+      "input": {
+        "age.months": 24,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        24,
+        0,
+        0,
+        -0.69704004471345282,
+        3,
+        0,
+        136,
+        37,
+        37.869343410831441,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw_probability": 0.0068849921226501465,
+      "probability": 0.00028814137225558021,
+      "classification": "GREEN"
+    },
+    {
+      "id": "fixed_plausible_minimum",
+      "input": {
+        "age.months": 0,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": -10,
+        "cidysymp": 0,
+        "not.alert": 0,
+        "hr.all": 20,
+        "rr.all": 5,
+        "envhtemp": 25,
+        "crt.long": 0
+      },
+      "features": [
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        20,
+        5,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.0097698569297790527,
+      "probability": 0.00055389041933120824,
+      "classification": "GREEN"
+    },
+    {
+      "id": "fixed_plausible_maximum",
+      "input": {
+        "age.months": 216,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 10,
+        "cidysymp": 60,
+        "not.alert": 1,
+        "hr.all": 300,
+        "rr.all": 150,
+        "envhtemp": 45,
+        "crt.long": 1
+      },
+      "features": [
+        216,
+        1,
+        1,
+        10,
+        60,
+        1,
+        300,
+        150,
+        45,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.19293278455734253,
+      "probability": 0.16908126332232903,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_001",
+      "input": {
+        "age.months": 19.550109861418605,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": -2.3430200573056936,
+        "cidysymp": 27.409356543794274,
+        "not.alert": 0,
+        "hr.all": 97.015214748680592,
+        "rr.all": 37.1445750631392,
+        "envhtemp": 42.426576176658273,
+        "crt.long": 1
+      },
+      "features": [
+        19.550109861418605,
+        0,
+        0,
+        -2.3430200573056936,
+        27.409356543794274,
+        0,
+        97.015214748680592,
+        37.1445750631392,
+        42.426576176658273,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.0091574192047119141,
+      "probability": 0.00049075296753816331,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_002",
+      "input": {
+        "age.months": null,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": -1.6645527305081487,
+        "cidysymp": 14.884572336450219,
+        "not.alert": null,
+        "hr.all": 85.727360434830189,
+        "rr.all": 147.96485531842336,
+        "envhtemp": 42.427269755862653,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        1,
+        -1.6645527305081487,
+        14.884572336450219,
+        0,
+        85.727360434830189,
+        147.96485531842336,
+        42.427269755862653,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.063028216361999512,
+      "probability": 0.019049594455554018,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_003",
+      "input": {
+        "age.months": 85.912701677531004,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": -9.655357263982296,
+        "cidysymp": 6.4319836115464568,
+        "not.alert": 1,
+        "hr.all": 140.30930178239942,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        85.912701677531004,
+        0,
+        1,
+        -9.655357263982296,
+        6.4319836115464568,
+        1,
+        140.30930178239942,
+        36,
+        37.552881242580661,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.0096832513809204102,
+      "probability": 0.00054474442766264499,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_004",
+      "input": {
+        "age.months": 191.04517015814781,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 83.510112995281816,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        191.04517015814781,
+        0,
+        1,
+        -0.56391445361404968,
+        3,
+        1,
+        83.510112995281816,
+        32,
+        37.407225951258596,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.010981559753417969,
+      "probability": 0.0006893284026179133,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_005",
+      "input": {
+        "age.months": 131.59911515749991,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 82.324627973139286,
+        "rr.all": 111.39341200934723,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        131.59911515749991,
+        1,
+        0,
+        -1.0746755831253829,
+        4,
+        0,
+        82.324627973139286,
+        111.39341200934723,
+        37.445754493655059,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.054526269435882568,
+      "probability": 0.014390693025641499,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_006",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": 2.3181517655029893,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": 94.531556396977976,
+        "envhtemp": 28.30657615326345,
+        "crt.long": null
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        0,
+        -2.0580809743219124,
+        2.3181517655029893,
+        1,
+        160,
+        94.531556396977976,
+        28.30657615326345,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.099139630794525146,
+      "probability": 0.046112997980682274,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_007",
+      "input": {
+        "age.months": 175.77073555625975,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -7.5164313009008765,
+        "cidysymp": 9.8954193061217666,
+        "not.alert": 1,
+        "hr.all": 220.54106693714857,
+        "rr.all": 12.045683154137805,
+        "envhtemp": 30.692187161184847,
+        "crt.long": 0
+      },
+      "features": [
+        175.77073555625975,
+        1,
+        1,
+        -7.5164313009008765,
+        9.8954193061217666,
+        1,
+        220.54106693714857,
+        12.045683154137805,
+        30.692187161184847,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.031101405620574951,
+      "probability": 0.0049067577676842906,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_008",
+      "input": {
+        "age.months": 80.502163181081414,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 9.5800746558234096,
+        "cidysymp": 24.527255846187472,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": 100.66404494689777,
+        "envhtemp": 32.827202961780131,
+        "crt.long": 0
+      },
+      "features": [
+        80.502163181081414,
+        1,
+        0,
+        9.5800746558234096,
+        24.527255846187472,
+        1,
+        156,
+        100.66404494689777,
+        32.827202961780131,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.097456276416778564,
+      "probability": 0.044589668276542642,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_009",
+      "input": {
+        "age.months": 79.139011653140187,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -1.3126776739954948,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 92.608409048989415,
+        "envhtemp": 30.267733791843057,
+        "crt.long": 1
+      },
+      "features": [
+        79.139011653140187,
+        1,
+        0,
+        -1.3126776739954948,
+        4,
+        0,
+        156,
+        92.608409048989415,
+        30.267733791843057,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.082059562206268311,
+      "probability": 0.031842939061718978,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_010",
+      "input": {
+        "age.months": 100.32644978910685,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 32.568456809967756,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 138.39653218397871,
+        "envhtemp": 35.406544236466289,
+        "crt.long": 1
+      },
+      "features": [
+        100.32644978910685,
+        1,
+        0,
+        -2.8067795943654352,
+        32.568456809967756,
+        0,
+        156,
+        138.39653218397871,
+        35.406544236466289,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.081994056701660156,
+      "probability": 0.031793286123642385,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_011",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -7.3727428913116455,
+        "cidysymp": 16.569741158746183,
+        "not.alert": 0,
+        "hr.all": 64.48922042734921,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        28.581704330771,
+        1,
+        1,
+        -7.3727428913116455,
+        16.569741158746183,
+        0,
+        64.48922042734921,
+        48,
+        37.199087387138874,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.0079236030578613281,
+      "probability": 0.00037451114803003675,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_012",
+      "input": {
+        "age.months": 66.361130246892571,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": 5.5273575335741043,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 39.010548717342317,
+        "crt.long": null
+      },
+      "features": [
+        66.361130246892571,
+        0,
+        0,
+        5.5273575335741043,
+        3,
+        1,
+        144,
+        37,
+        39.010548717342317,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.018807888031005859,
+      "probability": 0.0018934040761672693,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_013",
+      "input": {
+        "age.months": 47.10717910900712,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": 97.547828610986471,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        47.10717910900712,
+        1,
+        0,
+        -0.62880309079507379,
+        3,
+        0,
+        97.547828610986471,
+        32,
+        37.374744053526641,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.0080801248550415039,
+      "probability": 0.00038844149208720156,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_014",
+      "input": {
+        "age.months": 169.89221282489598,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -8.5497337486594915,
+        "cidysymp": 23.099967297166586,
+        "not.alert": 1,
+        "hr.all": 183.18277404643595,
+        "rr.all": 128.12752195284702,
+        "envhtemp": 32.544231358915567,
+        "crt.long": 0
+      },
+      "features": [
+        169.89221282489598,
+        1,
+        1,
+        -8.5497337486594915,
+        23.099967297166586,
+        1,
+        183.18277404643595,
+        128.12752195284702,
+        32.544231358915567,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.1429286003112793,
+      "probability": 0.094545526271426164,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_015",
+      "input": {
+        "age.months": 144.45986515469849,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": -3.8492191396653652,
+        "cidysymp": 20.940434862859547,
+        "not.alert": 1,
+        "hr.all": 294.54433239065111,
+        "rr.all": 113.13166620442644,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        144.45986515469849,
+        0,
+        1,
+        -3.8492191396653652,
+        20.940434862859547,
+        1,
+        294.54433239065111,
+        113.13166620442644,
+        38.435081310480193,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.16859698295593262,
+      "probability": 0.13044788202839755,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_016",
+      "input": {
+        "age.months": 51.791103612631559,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 219.19370665214956,
+        "rr.all": 110.21523202303797,
+        "envhtemp": 30.726901800371706,
+        "crt.long": 1
+      },
+      "features": [
+        51.791103612631559,
+        1,
+        1,
+        -2.7358471887150029,
+        4,
+        1,
+        219.19370665214956,
+        110.21523202303797,
+        30.726901800371706,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.1429286003112793,
+      "probability": 0.094545526271426164,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_017",
+      "input": {
+        "age.months": 22.20424810051918,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 3.7911276612430811,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": 292.43059975095093,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        22.20424810051918,
+        0,
+        1,
+        3.7911276612430811,
+        3,
+        0,
+        292.43059975095093,
+        43,
+        38.499111817999307,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.0415382981300354,
+      "probability": 0.0085263253201146791,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_018",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": 7.1366706676781178,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 293.38775760494173,
+        "rr.all": 131.24738343292847,
+        "envhtemp": 25.171211087144911,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        0,
+        7.1366706676781178,
+        4,
+        0,
+        293.38775760494173,
+        131.24738343292847,
+        25.171211087144911,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.16329222917556763,
+      "probability": 0.12260159800135163,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_019",
+      "input": {
+        "age.months": 60.422729596495628,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": 8.9782966766506433,
+        "cidysymp": 22.32704586815089,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 146.08240044559352,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        60.422729596495628,
+        0,
+        0,
+        8.9782966766506433,
+        22.32704586815089,
+        0,
+        160,
+        146.08240044559352,
+        38.232563601255009,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.13834810256958008,
+      "probability": 0.088702618080716444,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_020",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": -0.40042560081928968,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 41.343266647309065,
+        "crt.long": 1
+      },
+      "features": [
+        16.138839239146453,
+        0,
+        0,
+        -0.40042560081928968,
+        3,
+        1,
+        168,
+        49,
+        41.343266647309065,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.02777862548828125,
+      "probability": 0.0039585795269452629,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_021",
+      "input": {
+        "age.months": 146.82748065702617,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": -4.7689982270821929,
+        "cidysymp": 46.231684125959873,
+        "not.alert": 0,
+        "hr.all": 59.564470760524273,
+        "rr.all": 35.444473342504352,
+        "envhtemp": 35.863313032314181,
+        "crt.long": 1
+      },
+      "features": [
+        146.82748065702617,
+        0,
+        1,
+        -4.7689982270821929,
+        46.231684125959873,
+        0,
+        59.564470760524273,
+        35.444473342504352,
+        35.863313032314181,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.0096091032028198242,
+      "probability": 0.00053697088114234789,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_022",
+      "input": {
+        "age.months": 141.04010312631726,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -5.7976226415485144,
+        "cidysymp": 13.250400857068598,
+        "not.alert": null,
+        "hr.all": 291.83613827452064,
+        "rr.all": 138.19365399889648,
+        "envhtemp": 41.990353637374938,
+        "crt.long": 0
+      },
+      "features": [
+        141.04010312631726,
+        1,
+        1,
+        -5.7976226415485144,
+        13.250400857068598,
+        0,
+        291.83613827452064,
+        138.19365399889648,
+        41.990353637374938,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.1690058708190918,
+      "probability": 0.13106156517275119,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_023",
+      "input": {
+        "age.months": 37.756775541231036,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 8.6507821548730135,
+        "cidysymp": 40.143042742274702,
+        "not.alert": 0,
+        "hr.all": 245.39003157988191,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        37.756775541231036,
+        0,
+        1,
+        8.6507821548730135,
+        40.143042742274702,
+        0,
+        245.39003157988191,
+        50,
+        38.512934138874904,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.057153403759002686,
+      "probability": 0.015760873573649813,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_024",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 4.1944772657006979,
+        "cidysymp": 22.59404618293047,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 100.11047782725655,
+        "envhtemp": 41.007266151718795,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        0,
+        4.1944772657006979,
+        22.59404618293047,
+        0,
+        170,
+        100.11047782725655,
+        41.007266151718795,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.19268488883972168,
+      "probability": 0.16866705653329195,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_025",
+      "input": {
+        "age.months": 130.38976027071476,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 135.58494739234447,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        130.38976027071476,
+        1,
+        1,
+        -2.7312965824616913,
+        4,
+        1,
+        135.58494739234447,
+        34,
+        37.410429231631973,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.009679257869720459,
+      "probability": 0.00054432441855866548,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_026",
+      "input": {
+        "age.months": 193.83020162209868,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": -7.4687564140185714,
+        "cidysymp": 22.968168435618281,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 35.561337741091847,
+        "crt.long": null
+      },
+      "features": [
+        193.83020162209868,
+        0,
+        1,
+        -7.4687564140185714,
+        22.968168435618281,
+        0,
+        128,
+        32,
+        35.561337741091847,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.0097849369049072266,
+      "probability": 0.00055549025594535634,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_027",
+      "input": {
+        "age.months": 135.02644981630147,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 47.736852612579241,
+        "envhtemp": 41.553708566352725,
+        "crt.long": 0
+      },
+      "features": [
+        135.02644981630147,
+        0,
+        0,
+        -0.49367206202966857,
+        3,
+        0,
+        161,
+        47.736852612579241,
+        41.553708566352725,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.028908610343933105,
+      "probability": 0.004269949970666982,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_028",
+      "input": {
+        "age.months": 26.57081051543355,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 9.3495110422372818,
+        "cidysymp": 31.460023764520884,
+        "not.alert": 1,
+        "hr.all": 254.07211792655289,
+        "rr.all": 79.923610944533721,
+        "envhtemp": 41.719019892625511,
+        "crt.long": 0
+      },
+      "features": [
+        26.57081051543355,
+        0,
+        1,
+        9.3495110422372818,
+        31.460023764520884,
+        1,
+        254.07211792655289,
+        79.923610944533721,
+        41.719019892625511,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.19268488883972168,
+      "probability": 0.16866705653329195,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_029",
+      "input": {
+        "age.months": 120.45556038245559,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -0.90227058622986078,
+        "cidysymp": 3.4444121690467,
+        "not.alert": 0,
+        "hr.all": 76.466142516583204,
+        "rr.all": 75.787856469396502,
+        "envhtemp": 31.510245860554278,
+        "crt.long": null
+      },
+      "features": [
+        120.45556038245559,
+        1,
+        0,
+        -0.90227058622986078,
+        3.4444121690467,
+        0,
+        76.466142516583204,
+        75.787856469396502,
+        31.510245860554278,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.10271584987640381,
+      "probability": 0.049433787310055169,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_030",
+      "input": {
+        "age.months": 204.91725745797157,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": -6.6752251517027617,
+        "cidysymp": 35.504954438656569,
+        "not.alert": 1,
+        "hr.all": 104.46627651341259,
+        "rr.all": 103.22841378045268,
+        "envhtemp": 41.505722249858081,
+        "crt.long": 1
+      },
+      "features": [
+        204.91725745797157,
+        0,
+        0,
+        -6.6752251517027617,
+        35.504954438656569,
+        1,
+        104.46627651341259,
+        103.22841378045268,
+        41.505722249858081,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.065103352069854736,
+      "probability": 0.020285589179019899,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_031",
+      "input": {
+        "age.months": 80.784728435799479,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": -8.6822995916008949,
+        "cidysymp": 56.980061209760606,
+        "not.alert": 0,
+        "hr.all": 218.25789004564285,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        80.784728435799479,
+        1,
+        0,
+        -8.6822995916008949,
+        56.980061209760606,
+        0,
+        218.25789004564285,
+        55,
+        38.411503413047107,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.081672370433807373,
+      "probability": 0.031550012636586883,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_032",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": 3.5267522465437651,
+        "cidysymp": 10.904527399688959,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 93.699627669993788,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        0,
+        3.5267522465437651,
+        10.904527399688959,
+        0,
+        161,
+        93.699627669993788,
+        38.164316206328429,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.13661503791809082,
+      "probability": 0.086537963119775296,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_033",
+      "input": {
+        "age.months": null,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": 6.7326050251722336,
+        "cidysymp": 20.830907514318824,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 39.900930630974472,
+        "crt.long": null
+      },
+      "features": [
+        23.557453871734332,
+        0,
+        0,
+        6.7326050251722336,
+        20.830907514318824,
+        1,
+        164,
+        44,
+        39.900930630974472,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.025496602058410645,
+      "probability": 0.0033646200056721828,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_034",
+      "input": {
+        "age.months": 12.647000402212143,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 76.522268047556281,
+        "rr.all": null,
+        "envhtemp": 28.342319433577359,
+        "crt.long": null
+      },
+      "features": [
+        12.647000402212143,
+        0,
+        0,
+        -1.9380345526548732,
+        4,
+        0,
+        76.522268047556281,
+        41,
+        28.342319433577359,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.0075752735137939453,
+      "probability": 0.00034436670247656534,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_035",
+      "input": {
+        "age.months": 49.549667017534375,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -7.0966289611533284,
+        "cidysymp": 36.000601449050009,
+        "not.alert": 0,
+        "hr.all": 104.2772897426039,
+        "rr.all": 134.07253194134682,
+        "envhtemp": 36.967000588774681,
+        "crt.long": 1
+      },
+      "features": [
+        49.549667017534375,
+        1,
+        0,
+        -7.0966289611533284,
+        36.000601449050009,
+        0,
+        104.2772897426039,
+        134.07253194134682,
+        36.967000588774681,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.054071664810180664,
+      "probability": 0.014159888791769486,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_036",
+      "input": {
+        "age.months": 112.57173993811011,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 5.7257537916302681,
+        "cidysymp": 7.5411909492686391,
+        "not.alert": 0,
+        "hr.all": 174.28978618234396,
+        "rr.all": null,
+        "envhtemp": 39.953863937407732,
+        "crt.long": 0
+      },
+      "features": [
+        112.57173993811011,
+        0,
+        1,
+        5.7257537916302681,
+        7.5411909492686391,
+        0,
+        174.28978618234396,
+        42,
+        39.953863937407732,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.05078732967376709,
+      "probability": 0.012547540919874176,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_037",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -6.4928149990737438,
+        "cidysymp": 1.4577080821618438,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 145.7314059115015,
+        "envhtemp": 29.822619869373739,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        1,
+        -6.4928149990737438,
+        1.4577080821618438,
+        0,
+        160,
+        145.7314059115015,
+        29.822619869373739,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.099062025547027588,
+      "probability": 0.046042209571087199,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_038",
+      "input": {
+        "age.months": 0.95922206528484821,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": -1.0976404789835215,
+        "cidysymp": 42.782544479705393,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 75.759336524643004,
+        "envhtemp": 36.508221034891903,
+        "crt.long": null
+      },
+      "features": [
+        0.95922206528484821,
+        0,
+        1,
+        -1.0976404789835215,
+        42.782544479705393,
+        0,
+        160,
+        75.759336524643004,
+        36.508221034891903,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.1789359450340271,
+      "probability": 0.14634641916841662,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_039",
+      "input": {
+        "age.months": 193.44233388081193,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 41.849820986390114,
+        "envhtemp": 40.606283103115857,
+        "crt.long": 1
+      },
+      "features": [
+        193.44233388081193,
+        0,
+        0,
+        -2.7312965824616913,
+        3,
+        0,
+        157,
+        41.849820986390114,
+        40.606283103115857,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.019649505615234375,
+      "probability": 0.0020563026484823675,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_040",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": -3.9386278809979558,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 295.54416543804109,
+        "rr.all": null,
+        "envhtemp": 27.4531394476071,
+        "crt.long": 1
+      },
+      "features": [
+        11.797567655425775,
+        1,
+        0,
+        -3.9386278809979558,
+        4,
+        0,
+        295.54416543804109,
+        53,
+        27.4531394476071,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.055500328540802002,
+      "probability": 0.014891476860632052,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_041",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": 158.24510394595563,
+        "rr.all": null,
+        "envhtemp": 30.301379556767642,
+        "crt.long": null
+      },
+      "features": [
+        17.539234173361606,
+        0,
+        1,
+        -1.8578021891919587,
+        4,
+        0,
+        158.24510394595563,
+        42,
+        30.301379556767642,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.01633298397064209,
+      "probability": 0.0014517131872806377,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_042",
+      "input": {
+        "age.months": 33.336445463821292,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 0.27738261502236128,
+        "cidysymp": 29.696686137467623,
+        "not.alert": 0,
+        "hr.all": 61.084159351885319,
+        "rr.all": 125.43708885554224,
+        "envhtemp": 35.009730020537972,
+        "crt.long": 1
+      },
+      "features": [
+        33.336445463821292,
+        0,
+        1,
+        0.27738261502236128,
+        29.696686137467623,
+        0,
+        61.084159351885319,
+        125.43708885554224,
+        35.009730020537972,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.068093061447143555,
+      "probability": 0.022134647945430953,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_043",
+      "input": {
+        "age.months": 18.072507737204432,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 3.2875487999990582,
+        "cidysymp": 13.367856899276376,
+        "not.alert": null,
+        "hr.all": 83.183546150103211,
+        "rr.all": 85.65327339572832,
+        "envhtemp": 33.442653398960829,
+        "crt.long": 0
+      },
+      "features": [
+        18.072507737204432,
+        0,
+        1,
+        3.2875487999990582,
+        13.367856899276376,
+        0,
+        83.183546150103211,
+        85.65327339572832,
+        33.442653398960829,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.066381931304931641,
+      "probability": 0.021066482163240079,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_044",
+      "input": {
+        "age.months": 47.856892956420779,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": -6.0048724291846156,
+        "cidysymp": 16.023222003132105,
+        "not.alert": null,
+        "hr.all": 252.95449720695615,
+        "rr.all": 54.180983173428103,
+        "envhtemp": 30.023157219402492,
+        "crt.long": 0
+      },
+      "features": [
+        47.856892956420779,
+        0,
+        1,
+        -6.0048724291846156,
+        16.023222003132105,
+        0,
+        252.95449720695615,
+        54.180983173428103,
+        30.023157219402492,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.065010488033294678,
+      "probability": 0.020229447095204141,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_045",
+      "input": {
+        "age.months": 189.47409549728036,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 8.9990712516009808,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": 91.498161691706628,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        189.47409549728036,
+        1,
+        0,
+        8.9990712516009808,
+        3,
+        1,
+        160,
+        91.498161691706628,
+        38.219928638466776,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.13834810256958008,
+      "probability": 0.088702618080716444,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_046",
+      "input": {
+        "age.months": 39.869763979688287,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": 7.0003400836139917,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        39.869763979688287,
+        0,
+        1,
+        -0.66539958418001366,
+        7.0003400836139917,
+        0,
+        132,
+        33,
+        37.474016464781478,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "raw_probability": 0.0079439282417297363,
+      "probability": 0.00037630661325016953,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_047",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": 3.7693258514627814,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 46.731335204094648,
+        "rr.all": null,
+        "envhtemp": 39.421666846610606,
+        "crt.long": 0
+      },
+      "features": [
+        34.414442414563474,
+        0,
+        0,
+        3.7693258514627814,
+        3,
+        1,
+        46.731335204094648,
+        32,
+        39.421666846610606,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.015076756477355957,
+      "probability": 0.0012489474352724529,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_048",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 153.03052814677358,
+        "rr.all": 23.576349004870281,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        25.223349931735733,
+        0,
+        1,
+        -2.7312965824616913,
+        3,
+        0,
+        153.03052814677358,
+        23.576349004870281,
+        37.829479526067665,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.012131035327911377,
+      "probability": 0.00083062096619653664,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_049",
+      "input": {
+        "age.months": 34.226999977603555,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 3.3567055920138955,
+        "cidysymp": 17.565985559485853,
+        "not.alert": 1,
+        "hr.all": 285.78141109086573,
+        "rr.all": 131.92307217046618,
+        "envhtemp": 33.189748148433864,
+        "crt.long": 0
+      },
+      "features": [
+        34.226999977603555,
+        0,
+        1,
+        3.3567055920138955,
+        17.565985559485853,
+        1,
+        285.78141109086573,
+        131.92307217046618,
+        33.189748148433864,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.16337800025939941,
+      "probability": 0.12272674344170044,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_050",
+      "input": {
+        "age.months": 72.115006048232317,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": 3.5476218024268746,
+        "cidysymp": 12.508213212713599,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 103.18879417842254,
+        "envhtemp": 31.838304363191128,
+        "crt.long": 1
+      },
+      "features": [
+        72.115006048232317,
+        0,
+        0,
+        3.5476218024268746,
+        12.508213212713599,
+        0,
+        156,
+        103.18879417842254,
+        31.838304363191128,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.097456276416778564,
+      "probability": 0.044589668276542642,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_051",
+      "input": {
+        "age.months": 188.95822000131011,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": 9.2619490716606379,
+        "cidysymp": 13.45755435526371,
+        "not.alert": 0,
+        "hr.all": 229.89102949388325,
+        "rr.all": null,
+        "envhtemp": 33.347947844304144,
+        "crt.long": 1
+      },
+      "features": [
+        188.95822000131011,
+        1,
+        0,
+        9.2619490716606379,
+        13.45755435526371,
+        0,
+        229.89102949388325,
+        50,
+        33.347947844304144,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.053159713745117188,
+      "probability": 0.013702484176192287,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_052",
+      "input": {
+        "age.months": 45.183494159951806,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": 34.79498669039458,
+        "not.alert": 0,
+        "hr.all": 82.92863012291491,
+        "rr.all": 7.4430834618397057,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        45.183494159951806,
+        0,
+        0,
+        -2.8768509276987686,
+        34.79498669039458,
+        0,
+        82.92863012291491,
+        7.4430834618397057,
+        37.360055425986111,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.0091663002967834473,
+      "probability": 0.00049164287478705609,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_053",
+      "input": {
+        "age.months": 206.58233341947198,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": -3.0559058440849185,
+        "cidysymp": 29.669722029939294,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 29.042860018089414,
+        "crt.long": null
+      },
+      "features": [
+        206.58233341947198,
+        0,
+        0,
+        -3.0559058440849185,
+        29.669722029939294,
+        1,
+        128,
+        32,
+        29.042860018089414,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.0097849369049072266,
+      "probability": 0.00055549025594535634,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_054",
+      "input": {
+        "age.months": null,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": -0.89319049846380949,
+        "cidysymp": 44.279691162519157,
+        "not.alert": null,
+        "hr.all": 161.29333630204201,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        18.105737240585714,
+        0,
+        0,
+        -0.89319049846380949,
+        44.279691162519157,
+        0,
+        161.29333630204201,
+        41,
+        37.870730246997546,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.031134843826293945,
+      "probability": 0.0049168011667549876,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_055",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": -7.6551825134083629,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 112.41951210307889,
+        "envhtemp": 39.362121792510152,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        0,
+        -7.6551825134083629,
+        4,
+        0,
+        172,
+        112.41951210307889,
+        39.362121792510152,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.16831284761428833,
+      "probability": 0.13002217883004658,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_056",
+      "input": {
+        "age.months": 205.38321429491043,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 6.170230065472424,
+        "cidysymp": 12.306279391050339,
+        "not.alert": 1,
+        "hr.all": 149.78232087567449,
+        "rr.all": 21.955789859639481,
+        "envhtemp": 26.972427060827613,
+        "crt.long": 1
+      },
+      "features": [
+        205.38321429491043,
+        1,
+        1,
+        6.170230065472424,
+        12.306279391050339,
+        1,
+        149.78232087567449,
+        21.955789859639481,
+        26.972427060827613,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.021030664443969727,
+      "probability": 0.0023375360376629733,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_057",
+      "input": {
+        "age.months": 159.48271748609841,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 0.65932122990489006,
+        "cidysymp": 44.874569834209979,
+        "not.alert": 0,
+        "hr.all": 178.82211713120341,
+        "rr.all": null,
+        "envhtemp": 29.158498733304441,
+        "crt.long": 0
+      },
+      "features": [
+        159.48271748609841,
+        1,
+        1,
+        0.65932122990489006,
+        44.874569834209979,
+        0,
+        178.82211713120341,
+        42,
+        29.158498733304441,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.039099693298339844,
+      "probability": 0.0075935253567016876,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_058",
+      "input": {
+        "age.months": 80.713821658864617,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -0.22921646013855934,
+        "cidysymp": 23.878752370364964,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": 107.94950969167985,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        80.713821658864617,
+        1,
+        0,
+        -0.22921646013855934,
+        23.878752370364964,
+        1,
+        159,
+        107.94950969167985,
+        38.184906458397869,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.13834810256958008,
+      "probability": 0.088702618080716444,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_059",
+      "input": {
+        "age.months": 12.403211642056704,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 13.997054882347584,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 29.388781455345452,
+        "crt.long": 1
+      },
+      "features": [
+        12.403211642056704,
+        1,
+        0,
+        -2.8768509276987686,
+        13.997054882347584,
+        0,
+        148,
+        44,
+        29.388781455345452,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.0092738866806030273,
+      "probability": 0.00050248338605648785,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_060",
+      "input": {
+        "age.months": 119.46597195602953,
+        "sex": 0,
+        "adm.recent": null,
+        "wfaz": -0.91409758199006319,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 113.660853728652,
+        "rr.all": 13.95837810006924,
+        "envhtemp": 29.976200759410858,
+        "crt.long": null
+      },
+      "features": [
+        119.46597195602953,
+        0,
+        0,
+        -0.91409758199006319,
+        3,
+        0,
+        113.660853728652,
+        13.95837810006924,
+        29.976200759410858,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.019584000110626221,
+      "probability": 0.0020433932524908153,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_061",
+      "input": {
+        "age.months": 1.3121670931577682,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": 57.731544021517038,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 52.756696611177176,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        1.3121670931577682,
+        0,
+        0,
+        -2.8768509276987686,
+        57.731544021517038,
+        0,
+        158,
+        52.756696611177176,
+        37.758592990355901,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.11374998092651367,
+      "probability": 0.060400956905248236,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_062",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 174.09879395738244,
+        "rr.all": 63.539520668564364,
+        "envhtemp": 28.167854738421738,
+        "crt.long": null
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        0,
+        -2.2153190768426452,
+        4,
+        0,
+        174.09879395738244,
+        63.539520668564364,
+        28.167854738421738,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.14224296808242798,
+      "probability": 0.093659748885737526,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_063",
+      "input": {
+        "age.months": 130.6520323343575,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -6.4818658260628581,
+        "cidysymp": 14.116495968773961,
+        "not.alert": 1,
+        "hr.all": 80.907446825876832,
+        "rr.all": 41.758761407108977,
+        "envhtemp": 34.192415098659694,
+        "crt.long": 1
+      },
+      "features": [
+        130.6520323343575,
+        1,
+        1,
+        -6.4818658260628581,
+        14.116495968773961,
+        1,
+        80.907446825876832,
+        41.758761407108977,
+        34.192415098659694,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.0096091032028198242,
+      "probability": 0.00053697088114234789,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_064",
+      "input": {
+        "age.months": 133.20855819806457,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 48.870371924713254,
+        "not.alert": 0,
+        "hr.all": 294.4459000043571,
+        "rr.all": 30.019395247800276,
+        "envhtemp": 38.972107032313943,
+        "crt.long": 1
+      },
+      "features": [
+        133.20855819806457,
+        0,
+        0,
+        -2.8067795943654352,
+        48.870371924713254,
+        0,
+        294.4459000043571,
+        30.019395247800276,
+        38.972107032313943,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.039131581783294678,
+      "probability": 0.0076053804035118864,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_065",
+      "input": {
+        "age.months": 129.57740433700383,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 59.104804596863687,
+        "not.alert": 0,
+        "hr.all": 161.62093534134328,
+        "rr.all": 11.477447594515979,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        129.57740433700383,
+        1,
+        0,
+        -0.6317598087341032,
+        59.104804596863687,
+        0,
+        161.62093534134328,
+        11.477447594515979,
+        37.885742277603669,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.017449915409088135,
+      "probability": 0.0016441343797491336,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_066",
+      "input": {
+        "age.months": null,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": -3.9204552955925465,
+        "cidysymp": 29.010193473659456,
+        "not.alert": 1,
+        "hr.all": 160.96189370378852,
+        "rr.all": 126.01508091320284,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        1,
+        -3.9204552955925465,
+        29.010193473659456,
+        1,
+        160.96189370378852,
+        126.01508091320284,
+        37.749085696996275,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.099500477313995361,
+      "probability": 0.046442859132142231,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_067",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": 6.0377703281119466,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 73.677706143353134,
+        "envhtemp": 31.669460316188633,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        0,
+        1,
+        6.0377703281119466,
+        4,
+        0,
+        158,
+        73.677706143353134,
+        31.669460316188633,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.1150544285774231,
+      "probability": 0.061769081056021101,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_068",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": 3.107679970562458,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": null,
+        "rr.all": null,
+        "envhtemp": 35.8321483572945,
+        "crt.long": 0
+      },
+      "features": [
+        34.772488078723875,
+        0,
+        1,
+        3.107679970562458,
+        3,
+        1,
+        131,
+        32,
+        35.8321483572945,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "raw_probability": 0.011843442916870117,
+      "probability": 0.00079410670574932545,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_069",
+      "input": {
+        "age.months": null,
+        "sex": 0,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 178.09921792708337,
+        "rr.all": null,
+        "envhtemp": 28.234614501707256,
+        "crt.long": null
+      },
+      "features": [
+        14.433882539262276,
+        0,
+        0,
+        -1.8578021891919587,
+        4,
+        0,
+        178.09921792708337,
+        50,
+        28.234614501707256,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.032875895500183105,
+      "probability": 0.0054535364728496381,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_070",
+      "input": {
+        "age.months": 149.5502165928483,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 3.1252400018274784,
+        "cidysymp": 27.89749322924763,
+        "not.alert": 1,
+        "hr.all": 258.50431346334517,
+        "rr.all": 10.419293344020844,
+        "envhtemp": 28.213415700010955,
+        "crt.long": 1
+      },
+      "features": [
+        149.5502165928483,
+        0,
+        1,
+        3.1252400018274784,
+        27.89749322924763,
+        1,
+        258.50431346334517,
+        10.419293344020844,
+        28.213415700010955,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.040838122367858887,
+      "probability": 0.0082530618753848661,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_071",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 4.2764610704034567,
+        "cidysymp": 0.39384369738399982,
+        "not.alert": 1,
+        "hr.all": 181.44977670162916,
+        "rr.all": 107.10503018228337,
+        "envhtemp": 30.664730239659548,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        1,
+        4.2764610704034567,
+        0.39384369738399982,
+        1,
+        181.44977670162916,
+        107.10503018228337,
+        30.664730239659548,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.16329222917556763,
+      "probability": 0.12260159800135163,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_072",
+      "input": {
+        "age.months": 50.7523153424263,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": 9.6154020400717854,
+        "cidysymp": 4.9284684844315052,
+        "not.alert": 0,
+        "hr.all": 198.43307523988187,
+        "rr.all": 28.985021178377792,
+        "envhtemp": 43.836547918617725,
+        "crt.long": null
+      },
+      "features": [
+        50.7523153424263,
+        1,
+        0,
+        9.6154020400717854,
+        4.9284684844315052,
+        0,
+        198.43307523988187,
+        28.985021178377792,
+        43.836547918617725,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.051950514316558838,
+      "probability": 0.013107501981904055,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_073",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -0.45241963118314743,
+        "cidysymp": 9.1515054227784276,
+        "not.alert": 0,
+        "hr.all": 36.399232083931565,
+        "rr.all": 148.43350195907988,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        0,
+        -0.45241963118314743,
+        9.1515054227784276,
+        0,
+        36.399232083931565,
+        148.43350195907988,
+        37.430390038678759,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.058797001838684082,
+      "probability": 0.016649652057476885,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_074",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": -6.0021135630086064,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 75.230952585116029,
+        "rr.all": null,
+        "envhtemp": 31.00254078861326,
+        "crt.long": 1
+      },
+      "features": [
+        27.504941852476751,
+        1,
+        0,
+        -6.0021135630086064,
+        4,
+        0,
+        75.230952585116029,
+        49,
+        31.00254078861326,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.0078298449516296387,
+      "probability": 0.00036628091959319057,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_075",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": -1.4440094865858555,
+        "cidysymp": 19.723744271323085,
+        "not.alert": null,
+        "hr.all": 243.27177920378745,
+        "rr.all": null,
+        "envhtemp": 40.209438838064671,
+        "crt.long": null
+      },
+      "features": [
+        16.722244557328903,
+        1,
+        0,
+        -1.4440094865858555,
+        19.723744271323085,
+        0,
+        243.27177920378745,
+        46,
+        40.209438838064671,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.032515168190002441,
+      "probability": 0.0053401071412352936,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_076",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": -3.0005938094109297,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 281.25983828678727,
+        "rr.all": 19.974284816998988,
+        "envhtemp": 31.338834767229855,
+        "crt.long": null
+      },
+      "features": [
+        24.870873337150609,
+        0,
+        0,
+        -3.0005938094109297,
+        3,
+        0,
+        281.25983828678727,
+        19.974284816998988,
+        31.338834767229855,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.025590002536773682,
+      "probability": 0.0033880139978205021,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_077",
+      "input": {
+        "age.months": 9.5280609223991632,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 7.6482735248282552,
+        "cidysymp": 55.882719797082245,
+        "not.alert": 1,
+        "hr.all": 268.49664615467191,
+        "rr.all": 66.304916365770623,
+        "envhtemp": 40.371676911599934,
+        "crt.long": 0
+      },
+      "features": [
+        9.5280609223991632,
+        0,
+        1,
+        7.6482735248282552,
+        55.882719797082245,
+        1,
+        268.49664615467191,
+        66.304916365770623,
+        40.371676911599934,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.17761117219924927,
+      "probability": 0.14426558067148834,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_078",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -7.7781941974535584,
+        "cidysymp": 54.166418616659939,
+        "not.alert": 0,
+        "hr.all": 292.35619317740202,
+        "rr.all": 119.80065357289277,
+        "envhtemp": 44.525343882851303,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        1,
+        -7.7781941974535584,
+        54.166418616659939,
+        0,
+        292.35619317740202,
+        119.80065357289277,
+        44.525343882851303,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.16831284761428833,
+      "probability": 0.13002217883004658,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_079",
+      "input": {
+        "age.months": 85.021850595250726,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 9.8739249119535089,
+        "cidysymp": 20.258082048967481,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 144.93856749031693,
+        "envhtemp": 30.795864858664572,
+        "crt.long": 0
+      },
+      "features": [
+        85.021850595250726,
+        1,
+        1,
+        9.8739249119535089,
+        20.258082048967481,
+        0,
+        156,
+        144.93856749031693,
+        30.795864858664572,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.097456276416778564,
+      "probability": 0.044589668276542642,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_080",
+      "input": {
+        "age.months": 129.55074867792428,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -4.493559617549181,
+        "cidysymp": 16.212357021868229,
+        "not.alert": null,
+        "hr.all": null,
+        "rr.all": 143.28162498539314,
+        "envhtemp": null,
+        "crt.long": 0
+      },
+      "features": [
+        129.55074867792428,
+        1,
+        1,
+        -4.493559617549181,
+        16.212357021868229,
+        0,
+        159,
+        143.28162498539314,
+        38.146329828256071,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.11861974000930786,
+      "probability": 0.065585136091158652,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_081",
+      "input": {
+        "age.months": 122.68704490922391,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": 0.24625066667795181,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 231.82245193049312,
+        "rr.all": null,
+        "envhtemp": 27.026912425644696,
+        "crt.long": 1
+      },
+      "features": [
+        122.68704490922391,
+        0,
+        0,
+        0.24625066667795181,
+        3,
+        0,
+        231.82245193049312,
+        50,
+        27.026912425644696,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.053241610527038574,
+      "probability": 0.013743255723994626,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_082",
+      "input": {
+        "age.months": 70.645987512543797,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": 3.9694264717400074,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 79.117446066811681,
+        "rr.all": null,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        70.645987512543797,
+        0,
+        0,
+        3.9694264717400074,
+        3,
+        1,
+        79.117446066811681,
+        32,
+        37.32335928459193,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_probability": 0.014733076095581055,
+      "probability": 0.0011960020021623899,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_083",
+      "input": {
+        "age.months": 108.04680808447301,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": null,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 23.478222014382482,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        108.04680808447301,
+        0,
+        1,
+        -0.52304552009177741,
+        3,
+        0,
+        132,
+        23.478222014382482,
+        37.403015624598957,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_probability": 0.011095345020294189,
+      "probability": 0.00070276053719950046,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_084",
+      "input": {
+        "age.months": 184.43203372880816,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": 1.533877388574183,
+        "cidysymp": 10.181874828413129,
+        "not.alert": 1,
+        "hr.all": 192.89321825839579,
+        "rr.all": 21.064237016253173,
+        "envhtemp": 38.341998043470085,
+        "crt.long": 1
+      },
+      "features": [
+        184.43203372880816,
+        1,
+        1,
+        1.533877388574183,
+        10.181874828413129,
+        1,
+        192.89321825839579,
+        21.064237016253173,
+        38.341998043470085,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.051941096782684326,
+      "probability": 0.013102919612740254,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_085",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 1,
+        "wfaz": -0.73022780939936638,
+        "cidysymp": 45.209527714177966,
+        "not.alert": 0,
+        "hr.all": 42.954777926206589,
+        "rr.all": 111.96847858955152,
+        "envhtemp": 25.970922741107643,
+        "crt.long": 1
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        1,
+        -0.73022780939936638,
+        45.209527714177966,
+        0,
+        42.954777926206589,
+        111.96847858955152,
+        25.970922741107643,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.045507371425628662,
+      "probability": 0.010158193845743482,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_086",
+      "input": {
+        "age.months": 215.41470821388066,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": 7.6680414984002709,
+        "cidysymp": null,
+        "not.alert": 1,
+        "hr.all": 263.33555121906102,
+        "rr.all": 27.83012290019542,
+        "envhtemp": 44.050654866732657,
+        "crt.long": 1
+      },
+      "features": [
+        215.41470821388066,
+        0,
+        1,
+        7.6680414984002709,
+        3,
+        1,
+        263.33555121906102,
+        27.83012290019542,
+        44.050654866732657,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.051950514316558838,
+      "probability": 0.013107501981904055,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_087",
+      "input": {
+        "age.months": 20.083222791552544,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": -4.5452876156195998,
+        "cidysymp": 59.945307718589902,
+        "not.alert": 1,
+        "hr.all": 103.77553537487984,
+        "rr.all": null,
+        "envhtemp": 35.321287070401013,
+        "crt.long": 0
+      },
+      "features": [
+        20.083222791552544,
+        0,
+        0,
+        -4.5452876156195998,
+        59.945307718589902,
+        1,
+        103.77553537487984,
+        33,
+        35.321287070401013,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.0076072216033935547,
+      "probability": 0.00034708214814396202,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_088",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 5.6362817995250225,
+        "cidysymp": 48.448995756916702,
+        "not.alert": null,
+        "hr.all": 259.56874557770789,
+        "rr.all": 131.23908403562382,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        10.850824938415291,
+        1,
+        0,
+        5.6362817995250225,
+        48.448995756916702,
+        0,
+        259.56874557770789,
+        131.23908403562382,
+        38.531188823455075,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.19231075048446655,
+      "probability": 0.16804267822830193,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_089",
+      "input": {
+        "age.months": 68.067454878240824,
+        "sex": null,
+        "adm.recent": 1,
+        "wfaz": 6.8614523438736796,
+        "cidysymp": null,
+        "not.alert": null,
+        "hr.all": 150.86265059188008,
+        "rr.all": 126.0860946890898,
+        "envhtemp": null,
+        "crt.long": null
+      },
+      "features": [
+        68.067454878240824,
+        0,
+        1,
+        6.8614523438736796,
+        3,
+        0,
+        150.86265059188008,
+        126.0860946890898,
+        38.110173283601398,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.11606413125991821,
+      "probability": 0.062838407732562621,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_090",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": 23.859273749403656,
+        "not.alert": 0,
+        "hr.all": 168.49195929244161,
+        "rr.all": null,
+        "envhtemp": 41.12726962659508,
+        "crt.long": null
+      },
+      "features": [
+        17.555373663115603,
+        0,
+        0,
+        -0.66340026926754236,
+        23.859273749403656,
+        0,
+        168.49195929244161,
+        46,
+        41.12726962659508,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.017408668994903564,
+      "probability": 0.0016368259893611156,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_091",
+      "input": {
+        "age.months": 172.42781428992748,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 5.7455388037487864,
+        "cidysymp": 8.6077635269612074,
+        "not.alert": 1,
+        "hr.all": 92.930208817124367,
+        "rr.all": 69.207373419776559,
+        "envhtemp": 29.061826872639358,
+        "crt.long": 0
+      },
+      "features": [
+        172.42781428992748,
+        1,
+        0,
+        5.7455388037487864,
+        8.6077635269612074,
+        1,
+        92.930208817124367,
+        69.207373419776559,
+        29.061826872639358,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_probability": 0.068781733512878418,
+      "probability": 0.022572011533538439,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_092",
+      "input": {
+        "age.months": 59.315155891701579,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": 3.2409469503909349,
+        "cidysymp": 9.409536961466074,
+        "not.alert": 0,
+        "hr.all": 49.620983805507421,
+        "rr.all": 149.76415072451346,
+        "envhtemp": null,
+        "crt.long": 1
+      },
+      "features": [
+        59.315155891701579,
+        1,
+        0,
+        3.2409469503909349,
+        9.409536961466074,
+        0,
+        49.620983805507421,
+        149.76415072451346,
+        37.430390038678759,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_probability": 0.068781733512878418,
+      "probability": 0.022572011533538439,
+      "classification": "RED"
+    },
+    {
+      "id": "synthetic_093",
+      "input": {
+        "age.months": 22.521178588271141,
+        "sex": 0,
+        "adm.recent": 1,
+        "wfaz": 4.2554960632696748,
+        "cidysymp": null,
+        "not.alert": 0,
+        "hr.all": 99.404796296730638,
+        "rr.all": null,
+        "envhtemp": 29.1511275107041,
+        "crt.long": 1
+      },
+      "features": [
+        22.521178588271141,
+        0,
+        1,
+        4.2554960632696748,
+        3,
+        0,
+        99.404796296730638,
+        33,
+        29.1511275107041,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.010866224765777588,
+      "probability": 0.00067583801147418705,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_094",
+      "input": {
+        "age.months": 175.26601841859519,
+        "sex": 1,
+        "adm.recent": null,
+        "wfaz": null,
+        "cidysymp": 28.714642343111336,
+        "not.alert": 1,
+        "hr.all": 277.48600403778255,
+        "rr.all": null,
+        "envhtemp": 31.19999430142343,
+        "crt.long": 0
+      },
+      "features": [
+        175.26601841859519,
+        1,
+        0,
+        -0.81590776477531035,
+        28.714642343111336,
+        1,
+        277.48600403778255,
+        43,
+        31.19999430142343,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.060100555419921875,
+      "probability": 0.017371838814614723,
+      "classification": "AMBER"
+    },
+    {
+      "id": "synthetic_095",
+      "input": {
+        "age.months": null,
+        "sex": 1,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 52.627211306244135,
+        "not.alert": null,
+        "hr.all": 125.10365268215537,
+        "rr.all": null,
+        "envhtemp": 43.101359778083861,
+        "crt.long": 1
+      },
+      "features": [
+        29.529484121700293,
+        1,
+        0,
+        -2.8768509276987686,
+        52.627211306244135,
+        0,
+        125.10365268215537,
+        41,
+        43.101359778083861,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_probability": 0.0093589425086975098,
+      "probability": 0.00051113221999308416,
+      "classification": "GREEN"
+    },
+    {
+      "id": "synthetic_096",
+      "input": {
+        "age.months": null,
+        "sex": null,
+        "adm.recent": 0,
+        "wfaz": null,
+        "cidysymp": 55.502118011936545,
+        "not.alert": 0,
+        "hr.all": null,
+        "rr.all": 19.59003989235498,
+        "envhtemp": 29.491045223549008,
+        "crt.long": null
+      },
+      "features": [
+        27.15041501048875,
+        0,
+        0,
+        -1.6778981517257614,
+        55.502118011936545,
+        0,
+        133,
+        19.59003989235498,
+        29.491045223549008,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_probability": 0.0078746676445007324,
+      "probability": 0.0003702048406647332,
+      "classification": "GREEN"
+    }
+  ],
+  "stage2": [
+    {
+      "id": "p_0.005_typical_spo2",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0085874663256953077,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0077981971111148098,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_crp_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0056912378938492967,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_crp_strem1_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0049662791322432889,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_spo2_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0058393858593747882,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_spo2_strem1_crp",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0044296262854519805,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_typical_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0038915311696698057,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_spo2",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99983368456912536,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0035976202392130046,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_crp_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0027526865331635639,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_crp_strem1_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0005605658583817607,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_spo2_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99988184469034136,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_spo2_strem1_crp",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99942570573972234,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_minimum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99602600512225958,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_spo2",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.0049212685161299265,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999963629,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_crp_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.9999999999998983,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_crp_strem1_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_spo2_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999996292,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_spo2_strem1_crp",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999998601,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_maximum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.005_missing_spo2",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0085874663256953077,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0077981971111148098,
+      "classification": "AMBER",
+      "imputed": [
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_crp_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0056912378938492967,
+      "classification": "AMBER",
+      "imputed": [
+        "crp",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_crp_strem1_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0049662791173682138,
+      "classification": "GREEN",
+      "imputed": [
+        "crp",
+        "strem1",
+        "glucose"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_spo2_strem1",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0058393858593747882,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_spo2_strem1_crp",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0044296262854519805,
+      "classification": "GREEN",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp"
+      ]
+    },
+    {
+      "id": "p_0.005_missing_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0050000000000000001,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0038915311589458293,
+      "classification": "GREEN",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp",
+        "glucose"
+      ]
+    },
+    {
+      "id": "p_0.009924628_typical_spo2",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.016985164447592578,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.015436084703036318,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_crp_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.011288959076639758,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_crp_strem1_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0098580233205701074,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_spo2_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.011581123498049514,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_spo2_strem1_crp",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0087974453516357336,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_typical_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.0077328844628376664,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_spo2",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99991661853415659,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0071509350682038607,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_crp_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0054760596093576148,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_crp_strem1_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.001117592730445834,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_spo2_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99994076480917315,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_spo2_strem1_crp",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99971202165397022,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_minimum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99800386547107867,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_spo2",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.0097691128931529855,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.9999999999998177,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_crp_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999994893,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_crp_strem1_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_spo2_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999998135,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_spo2_strem1_crp",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999999312,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_maximum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.009924628_missing_spo2",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.016985164447592578,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.015436084703036318,
+      "classification": "AMBER",
+      "imputed": [
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_crp_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.011288959076639758,
+      "classification": "AMBER",
+      "imputed": [
+        "crp",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_crp_strem1_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0098580232911883638,
+      "classification": "AMBER",
+      "imputed": [
+        "crp",
+        "strem1",
+        "glucose"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_spo2_strem1",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.011581123498049514,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_spo2_strem1_crp",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0087974453516357336,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp"
+      ]
+    },
+    {
+      "id": "p_0.009924628_missing_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.0099246276767474065,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.0077328844416101666,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp",
+        "glucose"
+      ]
+    },
+    {
+      "id": "p_0.02_typical_spo2",
+      "stage1_probability": 0.02,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.033982296426102565,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.030931823601913367,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_crp_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.022717605034320132,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_crp_strem1_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.019867136439768895,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_spo2_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.023298579122346876,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_spo2_strem1_crp",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.017749028496520988,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_typical_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 98,
+        "strem1": 227,
+        "crp": 13.236886999999999,
+        "glucose": 5.3888889000000004
+      },
+      "probability": 0.015618322942489582,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_spo2",
+      "stage1_probability": 0.02,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99995904282470149,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.01445158632016862,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_crp_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.011085861932085815,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_crp_strem1_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.0022726838260001534,
+      "classification": "GREEN",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_spo2_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99997090389018972,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_spo2_strem1_crp",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99985852962011224,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_minimum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 50,
+        "strem1": 0,
+        "crp": 0,
+        "glucose": 0
+      },
+      "probability": 0.99901853870687429,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_spo2",
+      "stage1_probability": 0.02,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.019689748043656936,
+      "classification": "AMBER",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999991052,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_crp_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999997491,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_crp_strem1_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_spo2_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.9999999999999909,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_spo2_strem1_crp",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 0.99999999999999667,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_maximum_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": 100,
+        "strem1": 10000,
+        "crp": 1000,
+        "glucose": 50
+      },
+      "probability": 1,
+      "classification": "RED",
+      "imputed": []
+    },
+    {
+      "id": "p_0.02_missing_spo2",
+      "stage1_probability": 0.02,
+      "strategy": "spo2",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.033982296426102565,
+      "classification": "RED",
+      "imputed": [
+        "spo2"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.030931823601913367,
+      "classification": "RED",
+      "imputed": [
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_crp_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.022717605034320132,
+      "classification": "RED",
+      "imputed": [
+        "crp",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_crp_strem1_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "crp_strem1_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.019867136381153665,
+      "classification": "AMBER",
+      "imputed": [
+        "crp",
+        "strem1",
+        "glucose"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_spo2_strem1",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.023298579122346876,
+      "classification": "RED",
+      "imputed": [
+        "spo2",
+        "strem1"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_spo2_strem1_crp",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.017749028496520988,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp"
+      ]
+    },
+    {
+      "id": "p_0.02_missing_spo2_strem1_crp_glucose",
+      "stage1_probability": 0.02,
+      "strategy": "spo2_strem1_crp_glucose",
+      "measures": {
+        "spo2": null,
+        "strem1": null,
+        "crp": null,
+        "glucose": null
+      },
+      "probability": 0.015618322899956523,
+      "classification": "AMBER",
+      "imputed": [
+        "spo2",
+        "strem1",
+        "crp",
+        "glucose"
+      ]
+    }
+  ],
+  "weight_for_age": [
+    {
+      "id": "female_1m_kg",
+      "input": {
+        "age.months": 1,
+        "sex": 0,
+        "weight": 4.2000000000000002,
+        "unit": "kg"
+      },
+      "wfaz": 0.050000000000000003,
+      "weight_kg": 4.2000000000000002
+    },
+    {
+      "id": "male_6m_kg",
+      "input": {
+        "age.months": 6,
+        "sex": 1,
+        "weight": 7.7999999999999998,
+        "unit": "kg"
+      },
+      "wfaz": -0.16,
+      "weight_kg": 7.7999999999999998
+    },
+    {
+      "id": "female_24m_kg",
+      "input": {
+        "age.months": 24,
+        "sex": 0,
+        "weight": 12.4,
+        "unit": "kg"
+      },
+      "wfaz": 0.62,
+      "weight_kg": 12.4
+    },
+    {
+      "id": "female_24m_lb",
+      "input": {
+        "age.months": 24,
+        "sex": 0,
+        "weight": 27.337320510924819,
+        "unit": "lb"
+      },
+      "wfaz": 0.62,
+      "weight_kg": 12.4
+    },
+    {
+      "id": "male_37_5m_kg",
+      "input": {
+        "age.months": 37.5,
+        "sex": 1,
+        "weight": 15.1,
+        "unit": "kg"
+      },
+      "wfaz": 0.28000000000000003,
+      "weight_kg": 15.1
+    },
+    {
+      "id": "female_59m_kg",
+      "input": {
+        "age.months": 59,
+        "sex": 0,
+        "weight": 18.5,
+        "unit": "kg"
+      },
+      "wfaz": 0.17000000000000001,
+      "weight_kg": 18.5
+    }
+  ]
+}

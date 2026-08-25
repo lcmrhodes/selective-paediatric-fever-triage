@@ -1,0 +1,6 @@
+Cohort_or_contract,Rows,Events,Definition_or_note
+Raw parent cohort,3423,133,"133 parent-study severe events among 3,405 children with observed parent-study endpoint; 18 rows had no parent-study endpoint"
+Paper analysis cohort,3405,133,Complete parent-study severe-illness endpoint
+Stage 1 development contract,2578,92,Non-Cambodia; death or organ support within two days; complete Stage 1 contract
+Stage 2 derivation cohort,2581,97,"Non-Cambodia; parent-study severe-illness endpoint, including discharge home for end-of-life care"
+Held-out Cambodia validation cohort,824,36,Complete parent-study severe-illness endpoint; all 36 also met death or organ support within two days

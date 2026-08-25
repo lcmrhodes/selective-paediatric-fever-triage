@@ -1,0 +1,38 @@
+{
+  "publication_model_date": "2026-08-24",
+  "model_version": "2026-08-24",
+  "participant_rows_included": false,
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "file": "stage1_preprocessor.rds",
+      "bytes": 2379420,
+      "hash": "2cb0179fbf792cf656cc6575a2f3999b82078ab92b9cbb811059c14dac256ccf"
+    },
+    {
+      "file": "stage1_booster.ubj",
+      "bytes": 3947054,
+      "hash": "d94e5f79dc3db6c5c154a9898d2f312d97eedde52e3d10cfb8c10b848655229b"
+    },
+    {
+      "file": "stage1_calibration.json",
+      "bytes": 149,
+      "hash": "8cc878653f6a47798e99a066abcc42d365823bf9ac986d3262f52f1d9aeb6eac"
+    },
+    {
+      "file": "stage2_models.json",
+      "bytes": 2035,
+      "hash": "8173642cd2d2dbfb829f52998a2878cbcbeaf8e92d7c322902c4c34cf79e0279"
+    },
+    {
+      "file": "browser_model_bundle.json",
+      "bytes": 1879904,
+      "hash": "db085c3e4bc92dda7a790b205c6579cbefd10c6faed3b85550e7182be9361799"
+    }
+  ],
+  "verification": {
+    "stage1_max_absolute_probability_difference": 0,
+    "stage2_max_absolute_probability_difference": 5.551115123125783e-16,
+    "verification_rows": 824
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "method": "weighted Platt scaling",
+  "intercept": 1.0592828889432637,
+  "slope": 1.8527706766420524,
+  "clip_epsilon": 9.9999999999999995e-07
+}

@@ -1,0 +1,33 @@
+.DS_Store
+.env
+.env.*
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+node_modules/
+dist/
+*.log
+*.Rout
+*.Rout.fail
+*.rda
+*.RData
+*.xlsx
+*.xls
+*.parquet
+*.feather
+
+# Restricted study data and every participant-level derivative stay local.
+data/raw/*
+!data/raw/.gitkeep
+data/derived/*
+!data/derived/.gitkeep
+
+# Generated analysis and browser-check outputs are reproducible and untracked.
+outputs/*
+!outputs/.gitkeep
+
+# Local credential files.
+secrets.yml

@@ -1,0 +1,34 @@
+Package: spotsepsisstage2
+Title: Spot Sepsis Stage 2 Reproducibility Package
+Version: 1.0.0
+Authors@R: c(
+    person("Luke", "Rhodes", role = c("aut", "cre"))
+  )
+Description: Reproduces the analyses, tables, figures, and fixed prediction
+    models reported in the Spot Sepsis Stage 2 manuscript. Restricted study
+    data are supplied locally by authorized researchers and are never included.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (== 4.6.0)
+Imports:
+    dplyr,
+    ggplot2,
+    hardhat,
+    ipred,
+    jsonlite,
+    Matrix,
+    parsnip,
+    purrr,
+    readr,
+    readxl,
+    recipes,
+    rpart,
+    scales,
+    testthat,
+    tibble,
+    tidyr,
+    workflows,
+    xgboost,
+    yaml,
+    zscorer
+Config/testthat/edition: 3

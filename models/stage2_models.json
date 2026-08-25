@@ -1,0 +1,76 @@
+{
+  "offset_coefficient": 1,
+  "medians": {
+    "spo2": 98,
+    "strem1": 227,
+    "crp": 13.236886999999999,
+    "glucose": 5.3888888888888902
+  },
+  "strategies": {
+    "spo2": {
+      "label": "SpO2",
+      "predictors": "spo2",
+      "intercept": 28.00547647496515,
+      "coefficients": {
+        "spo2": -0.28021427185634473
+      }
+    },
+    "strem1": {
+      "label": "sTREM-1",
+      "predictors": "strem1",
+      "intercept": -0.33057376480690848,
+      "coefficients": {
+        "strem1": 0.0034266283699653779
+      }
+    },
+    "crp_strem1": {
+      "label": "CRP + sTREM-1",
+      "predictors": ["crp", "strem1"],
+      "intercept": -0.59911661616393719,
+      "coefficients": {
+        "crp": 0.0088299779523845264,
+        "strem1": 0.0026978855363422715
+      }
+    },
+    "crp_strem1_glucose": {
+      "label": "CRP + sTREM-1 + glucose",
+      "predictors": ["crp", "strem1", "glucose"],
+      "intercept": -2.1926982752528943,
+      "coefficients": {
+        "crp": 0.008659792004789146,
+        "strem1": 0.0026931211118781284,
+        "glucose": 0.27091487943653758
+      }
+    },
+    "spo2_strem1": {
+      "label": "SpO2 + sTREM-1",
+      "predictors": ["spo2", "strem1"],
+      "intercept": 29.995950522261669,
+      "coefficients": {
+        "spo2": -0.31318506488933251,
+        "strem1": 0.0037542621789248684
+      }
+    },
+    "spo2_strem1_crp": {
+      "label": "SpO2 + sTREM-1 + CRP",
+      "predictors": ["spo2", "strem1", "crp"],
+      "intercept": 27.00589240171443,
+      "coefficients": {
+        "spo2": -0.2850158678356699,
+        "strem1": 0.0030830922226967434,
+        "crp": 0.0078647603530573578
+      }
+    },
+    "spo2_strem1_crp_glucose": {
+      "label": "SpO2 + sTREM-1 + CRP + glucose",
+      "predictors": ["spo2", "strem1", "crp", "glucose"],
+      "intercept": 24.581952922534921,
+      "coefficients": {
+        "spo2": -0.27529293172383951,
+        "strem1": 0.0030848126273773742,
+        "crp": 0.0077817991454751335,
+        "glucose": 0.24898388417842768
+      }
+    }
+  }
+}

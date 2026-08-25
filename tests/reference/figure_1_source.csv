@@ -1,0 +1,13 @@
+panel,stage2_strategy,disposition,weighted_percent_of_s1_amber,projected_per_10000,severe_per_10000,nonsevere_per_10000
+Oxygen saturation,S1 clinical-only -> S2 SpO2,Green,0,0,0,0
+Oxygen saturation,S1 clinical-only -> S2 SpO2,Amber,83.09,901,3,898
+Oxygen saturation,S1 clinical-only -> S2 SpO2,Red,16.91,183,2,181
+sTREM-1,S1 clinical-only -> S2 sTREM-1,Green,0,0,0,0
+sTREM-1,S1 clinical-only -> S2 sTREM-1,Amber,77.26,838,2,836
+sTREM-1,S1 clinical-only -> S2 sTREM-1,Red,22.74,247,4,243
+CRP + sTREM-1,S1 clinical-only -> S2 CRP + sTREM-1,Green,0.3,3,0,3
+CRP + sTREM-1,S1 clinical-only -> S2 CRP + sTREM-1,Amber,82.41,894,5,889
+CRP + sTREM-1,S1 clinical-only -> S2 CRP + sTREM-1,Red,17.29,187,1,187
+CRP + sTREM-1 + glucose,S1 clinical-only -> S2 CRP + sTREM-1 + glucose,Green,5.46,59,0,59
+CRP + sTREM-1 + glucose,S1 clinical-only -> S2 CRP + sTREM-1 + glucose,Amber,71.65,777,2,775
+CRP + sTREM-1 + glucose,S1 clinical-only -> S2 CRP + sTREM-1 + glucose,Red,22.9,248,4,244

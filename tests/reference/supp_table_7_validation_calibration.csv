@@ -1,0 +1,9 @@
+Strategy,Weighted AUROC,Weighted Brier score,Weighted calibration intercept,Weighted calibration slope
+Clinical-only Stage 1,0.953,0.003,-0.210,1.376
+Stage 1 + oxygen saturation,0.955,0.003,-0.332,1.439
+Stage 1 + sTREM-1,0.954,0.003,-0.577,1.257
+Stage 1 + CRP + sTREM-1,0.951,0.003,-0.702,1.026
+Stage 1 + CRP + sTREM-1 + glucose,0.952,0.003,-0.633,1.114
+Stage 1 + oxygen saturation + sTREM-1,0.956,0.003,-0.431,1.224
+Stage 1 + oxygen saturation + sTREM-1 + CRP,0.953,0.003,-0.552,1.047
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,0.955,0.003,-0.486,1.124

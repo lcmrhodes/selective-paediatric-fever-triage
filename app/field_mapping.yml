@@ -1,0 +1,53 @@
+# Stage 1 clinical terminology —-
+
+stage1:
+  age.months:
+    label: Age
+    unit: months
+  sex:
+    label: Sex
+    coding: Female = 0; Male = 1
+  adm.recent:
+    label: Hospital admission in the preceding 6 months
+    coding: No = 0; Yes = 1
+  wfaz:
+    label: Weight-for-age z score
+    unit: z score
+    optional_calculation:
+      inputs: Age in months; sex; weight in kilograms or pounds
+      reference: WHO Child Growth Standards 2006
+      implementation: zscorer 0.3.1
+      supported_age: 1 to 59 months
+  cidysymp:
+    label: Illness duration
+    unit: days
+  not.alert:
+    label: Alertness
+    coding: Alert = 0; Not alert = 1
+  hr.all:
+    label: Heart rate
+    unit: beats/min
+  rr.all:
+    label: Respiratory rate
+    unit: breaths/min
+  envhtemp:
+    label: Axillary temperature
+    unit: degrees Celsius
+  crt.long:
+    label: Capillary refill longer than 2 seconds
+    coding: No = 0; Yes = 1
+# Stage 2 clinical terminology —-
+
+stage2:
+  spo2:
+    label: Oxygen saturation
+    unit: percent
+  strem1:
+    label: Soluble triggering receptor expressed on myeloid cells 1 (sTREM-1)
+    unit: pg/mL
+  crp:
+    label: C-reactive protein (CRP)
+    unit: mg/L
+  glucose:
+    label: Glucose
+    unit: mmol/L

@@ -1,0 +1,6 @@
+strategy,severe_green_missed,severe_amber_monitored,severe_red_referred,severe_red_ci_low,severe_red_ci_high,total_severe_per_10000
+Clinical-only S1,2,6,22,19.8,25.1,30
++ SpO2,2,3,25,21.5,28.4,30
++ sTREM-1,2,2,26,23,30.1,30
++ CRP + sTREM-1,2,5,23,20.4,26.3,30
++ CRP + sTREM-1 + glucose,2,2,26,22.9,30.1,30

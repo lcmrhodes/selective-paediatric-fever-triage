@@ -1,0 +1,73 @@
+{
+  "stage1": [
+    {
+      "id": "green",
+      "input": {"age.months": 36, "sex": 0, "adm.recent": 0, "wfaz": 0, "cidysymp": 2, "not.alert": 0, "hr.all": 100, "rr.all": 24, "envhtemp": 37, "crt.long": 0},
+      "raw_probability": 0.0036185979843139648,
+      "probability": 0.0000869871376922218,
+      "classification": "GREEN"
+    },
+    {
+      "id": "amber",
+      "input": {"age.months": 60, "sex": 0, "adm.recent": 0, "wfaz": 2, "cidysymp": 8, "not.alert": 1, "hr.all": 150, "rr.all": 55, "envhtemp": 36.5, "crt.long": 0},
+      "raw_probability": 0.0449596643447876,
+      "probability": 0.009924627676747406,
+      "classification": "AMBER"
+    },
+    {
+      "id": "red",
+      "input": {"age.months": 12, "sex": 1, "adm.recent": 1, "wfaz": -3, "cidysymp": 7, "not.alert": 1, "hr.all": 180, "rr.all": 60, "envhtemp": 39.5, "crt.long": 1},
+      "raw_probability": 0.1314399242401123,
+      "probability": 0.08022605206225199,
+      "classification": "RED"
+    },
+    {
+      "id": "missing_values",
+      "input": {"age.months": 24, "sex": null, "adm.recent": null, "wfaz": null, "cidysymp": null, "not.alert": null, "hr.all": null, "rr.all": null, "envhtemp": null, "crt.long": null},
+      "raw_probability": 0.0068849921226501465,
+      "probability": 0.0002881413722555802,
+      "classification": "GREEN"
+    },
+    {
+      "id": "plausible_minimum",
+      "input": {"age.months": 0, "sex": 0, "adm.recent": 0, "wfaz": -10, "cidysymp": 0, "not.alert": 0, "hr.all": 20, "rr.all": 5, "envhtemp": 25, "crt.long": 0},
+      "raw_probability": 0.009769856929779053,
+      "probability": 0.0005538904193312082,
+      "classification": "GREEN"
+    },
+    {
+      "id": "plausible_maximum",
+      "input": {"age.months": 216, "sex": 1, "adm.recent": 1, "wfaz": 10, "cidysymp": 60, "not.alert": 1, "hr.all": 300, "rr.all": 150, "envhtemp": 45, "crt.long": 1},
+      "raw_probability": 0.19293278455734253,
+      "probability": 0.16908126332232903,
+      "classification": "RED"
+    }
+  ],
+  "stage2": {
+    "stage1_probability": 0.009924627676747406,
+    "measures": {"spo2": 98, "strem1": 227, "crp": 13.236887, "glucose": 5.3888889},
+    "expected": [
+      {"strategy": "spo2", "probability": 0.016985164447592578, "classification": "AMBER"},
+      {"strategy": "strem1", "probability": 0.015436084703036318, "classification": "AMBER"},
+      {"strategy": "crp_strem1", "probability": 0.011288959076639758, "classification": "AMBER"},
+      {"strategy": "crp_strem1_glucose", "probability": 0.009858023320570107, "classification": "AMBER"},
+      {"strategy": "spo2_strem1", "probability": 0.011581123498049514, "classification": "AMBER"},
+      {"strategy": "spo2_strem1_crp", "probability": 0.008797445351635734, "classification": "AMBER"},
+      {"strategy": "spo2_strem1_crp_glucose", "probability": 0.007732884462837666, "classification": "AMBER"}
+    ]
+  },
+  "stage2_missing": {
+    "stage1_probability": 0.009924627676747406,
+    "strategy": "spo2_strem1_crp_glucose",
+    "measures": {"spo2": null, "strem1": null, "crp": null, "glucose": null},
+    "probability": 0.007732884441610167,
+    "classification": "AMBER",
+    "imputed": ["spo2", "strem1", "crp", "glucose"]
+  },
+  "thresholds": [
+    {"probability": 0.004999999999, "classification": "GREEN"},
+    {"probability": 0.005, "classification": "AMBER"},
+    {"probability": 0.02, "classification": "AMBER"},
+    {"probability": 0.020000000001, "classification": "RED"}
+  ]
+}

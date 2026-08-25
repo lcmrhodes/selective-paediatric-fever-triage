@@ -1,0 +1,54 @@
+name: Validate publication package and PWA
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out the release source
+        uses: actions/checkout@v6
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "4.6.0"
+          use-public-rspm: true
+
+      - name: Restore the R environment
+        run: Rscript tools/restore_environment.R
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+          package-manager-cache: false
+
+      - name: Install browser build dependencies
+        run: npm ci
+
+      - name: Regenerate browser-neutral reference artifacts
+        run: |
+          npm run export:model
+          Rscript tools/write_browser_parity_reference.R
+          node scripts/check-model-bundle.mjs --write
+
+      - name: Confirm generated reference artifacts are committed
+        run: git diff --exit-code -- models/browser_model_bundle.json models/model_bundle_manifest.json tests/fixtures/browser_parity_reference.json
+
+      - name: Run R reference tests
+        run: Rscript tests/testthat.R
+
+      - name: Run browser parity and PWA tests
+        run: npm run test:all
+
+      - name: Run repository distribution checks
+        run: bash tools/check_repository.sh

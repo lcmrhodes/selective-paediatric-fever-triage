@@ -1,0 +1,11 @@
+Element,Stage_1_specification
+Endpoint,Death or organ support within two days
+Development cohort,"2,578 non-Cambodia children; 92 events under the Stage 1 contract"
+Predictors,Age; sex; recent hospital admission; weight-for-age z score; illness duration; alertness; heart rate; respiratory rate; axillary temperature; prolonged capillary refill
+Algorithm,XGBoost gradient-boosted trees using the fixed model specification
+Fitted iterations,"5,000"
+Key tuning values,eta 0.009763351; max_depth 160; min_child_weight 36; max_leaves 219; gamma 1.239363e-08; lambda 2.503444e-07; alpha 2.532750e-06; base_score 0.03568658
+Tree settings,hist tree method; lossguide growth; one thread
+Recipe,Numeric missingness indicators; bagged numeric imputation; explicit unknown/novel nominal levels; one-hot encoding; zero-variance removal
+Calibration,Weighted Platt scaling on full-derivation fitted logits; intercept 1.0592829; slope 1.8527707
+Traffic-light thresholds,Green <0.005; Amber 0.005–0.02 inclusive; Red >0.02

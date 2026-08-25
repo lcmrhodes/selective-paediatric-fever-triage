@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research demonstration of the Spot Sepsis Stage 1 and Stage 2 prediction models.">
+  <meta name="theme-color" content="#fbfaf8">
+  <title>Spot Sepsis</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon-192.png">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body class="safety-gate-open">
+  <!-- Publication identity —- -->
+
+  <header class="site-header" inert>
+    <a class="brand" href="#stage1-view" aria-label="Spot Sepsis home">
+      <strong>Spot Sepsis</strong>
+      <span>Selective biomarkers for paediatric fever triage</span>
+    </a>
+  </header>
+
+  <!-- Research-use acknowledgement —- -->
+
+  <dialog id="safety-acknowledgement" class="safety-dialog" aria-labelledby="safety-heading" aria-describedby="safety-intro safety-terms" open>
+    <div class="safety-dialog-content">
+      <h2 id="safety-heading">Before you continue</h2>
+      <p id="safety-intro">Spot Sepsis is provided for research and demonstration only. It has not been validated, approved or authorised for clinical use.</p>
+      <div id="safety-terms" class="safety-terms">
+        <p>Do not use this tool for live clinical prediction, diagnosis, triage, treatment or other patient-care decisions.</p>
+        <p>It does not replace clinical assessment, clinical judgement or local care pathways.</p>
+        <p>If you are assessing a child now, follow the appropriate local clinical and emergency pathways.</p>
+      </div>
+      <label class="safety-confirmation">
+        <input id="safety-confirmation" type="checkbox">
+        <span>I understand and agree to use Spot Sepsis only for research or demonstration, not for live clinical prediction.</span>
+      </label>
+      <button id="safety-continue" class="primary-button safety-continue" type="button" disabled>Continue to Spot Sepsis</button>
+    </div>
+  </dialog>
+
+  <main id="main" inert>
+    <p id="startup-error" class="startup-error" role="alert" hidden></p>
+
+    <!-- Two-stage progress control —- -->
+
+    <nav class="progress" aria-label="Prediction stages">
+      <button id="stage1-step" class="progress-step is-active" type="button" aria-current="step" aria-label="Stage 1, current stage">1</button>
+      <span class="progress-line" aria-hidden="true"></span>
+      <button id="stage2-step" class="progress-step" type="button" aria-label="Stage 2, unavailable until an Amber result" disabled>2</button>
+    </nav>
+
+    <!-- Stage 1 clinical assessment —- -->
+
+    <section id="stage1-view" class="stage-view is-active" aria-labelledby="stage1-heading">
+      <div class="screen-heading">
+        <h1 id="stage1-heading"><strong>Stage 1</strong><span>Clinical assessment</span></h1>
+        <span class="heading-rule" aria-hidden="true"></span>
+      </div>
+
+      <form id="stage1-form" class="clinical-form" novalidate>
+        <div class="stage1-grid form-grid">
+          <label class="field">
+            <span>Age <small>months</small></span>
+            <input name="age.months" type="number" min="0" max="216" step="1" inputmode="decimal" placeholder="For example, 24">
+          </label>
+          <label class="field">
+            <span>Sex</span>
+            <select name="sex">
+              <option value="">Not available</option>
+              <option value="0">Female</option>
+              <option value="1">Male</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Hospital admission in preceding 6 months</span>
+            <select name="adm.recent">
+              <option value="">Not available</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </label>
+          <!-- Optional weight-to-z-score helper —- -->
+
+          <div class="field wfaz-field">
+            <label class="field-title" for="wfaz-input">Weight-for-age z score</label>
+            <input id="wfaz-input" name="wfaz" type="number" min="-10" max="10" step="0.01" inputmode="decimal" placeholder="For example, −1.25">
+            <button id="wfaz-helper-toggle" class="wfaz-helper-toggle" type="button" aria-expanded="false" aria-controls="wfaz-helper">Calculate from weight</button>
+            <section id="wfaz-helper" class="wfaz-helper" aria-label="Calculate weight-for-age z score" hidden>
+              <label class="wfaz-weight-field" for="wfaz-weight">
+                <span>Weight</span>
+              </label>
+              <div id="wfaz-weight-control" class="wfaz-weight-control">
+                <input id="wfaz-weight" data-auxiliary type="number" min="0.5" max="50" step="0.01" inputmode="decimal" placeholder="For example, 12.4">
+                <select id="wfaz-weight-unit" data-auxiliary aria-label="Weight unit">
+                  <option value="kg">kg</option>
+                  <option value="lb">lb</option>
+                </select>
+              </div>
+              <p class="wfaz-helper-note">Uses age and sex entered above</p>
+              <p id="wfaz-helper-error" class="wfaz-helper-error" role="alert" hidden></p>
+              <button id="wfaz-helper-apply" class="wfaz-helper-apply" type="button">Use calculated z score</button>
+            </section>
+          </div>
+          <label class="field">
+            <span>Illness duration <small>days</small></span>
+            <input name="cidysymp" type="number" min="0" max="60" step="0.1" inputmode="decimal" placeholder="For example, 3">
+          </label>
+          <label class="field">
+            <span>Alertness</span>
+            <select name="not.alert">
+              <option value="">Not available</option>
+              <option value="0">Alert</option>
+              <option value="1">Not alert</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Heart rate <small>beats/min</small></span>
+            <input name="hr.all" type="number" min="20" max="300" step="1" inputmode="decimal" placeholder="For example, 120">
+          </label>
+          <label class="field">
+            <span>Respiratory rate <small>breaths/min</small></span>
+            <input name="rr.all" type="number" min="5" max="150" step="1" inputmode="decimal" placeholder="For example, 32">
+          </label>
+          <label class="field">
+            <span>Axillary temperature <small>°C</small></span>
+            <input name="envhtemp" type="number" min="25" max="45" step="0.1" inputmode="decimal" placeholder="For example, 37.5">
+          </label>
+          <label class="field">
+            <span>Capillary refill longer than 2 seconds</span>
+            <select name="crt.long">
+              <option value="">Not available</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="action-area">
+          <button id="stage1-submit" class="primary-button" type="submit">Calculate Stage 1</button>
+          <p id="stage1-error" class="error" role="alert" hidden></p>
+        </div>
+      </form>
+
+      <!-- Stage 1 prediction result —- -->
+
+      <section id="stage1-result" class="result-panel" aria-live="polite" hidden>
+        <div class="result-summary">
+          <div>
+            <p class="result-label">Calibrated two-day risk</p>
+            <p id="stage1-probability" class="probability">—</p>
+          </div>
+          <div class="classification-result">
+            <p id="stage1-classification" class="zone-badge" aria-label="Classification">—</p>
+          </div>
+          <p id="stage1-explanation" class="result-explanation"></p>
+        </div>
+        <div class="result-actions">
+          <button id="continue-stage2" class="primary-button" type="button" hidden>Continue to Stage 2</button>
+          <button id="restart-stage1" class="text-button" type="button">Edit observations</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Stage 2 strategy selection —- -->
+
+    <section id="stage2-view" class="stage-view" aria-labelledby="stage2-heading" hidden>
+      <div class="screen-heading">
+        <h2 id="stage2-heading"><strong>Stage 2</strong><span>Resolve Amber</span></h2>
+        <span class="heading-rule" aria-hidden="true"></span>
+      </div>
+
+      <form id="stage2-form" class="clinical-form stage2-form" novalidate>
+        <div class="stage2-layout">
+          <label class="field strategy-field">
+            <span>Stage 2 strategy</span>
+            <select id="stage2-strategy" name="strategy">
+              <option value="spo2">SpO₂</option>
+              <option value="strem1">sTREM-1</option>
+              <option value="crp_strem1">CRP + sTREM-1</option>
+              <option value="crp_strem1_glucose">CRP + sTREM-1 + glucose</option>
+              <option value="spo2_strem1">SpO₂ + sTREM-1</option>
+              <option value="spo2_strem1_crp">SpO₂ + sTREM-1 + CRP</option>
+              <option value="spo2_strem1_crp_glucose">SpO₂ + sTREM-1 + CRP + glucose</option>
+            </select>
+          </label>
+
+          <div id="stage2-measures" class="stage2-grid form-grid">
+            <label class="field" data-measure="spo2">
+              <span>Oxygen saturation <small>%</small></span>
+              <input name="spo2" type="number" min="50" max="100" step="0.1" inputmode="decimal" placeholder="For example, 96">
+            </label>
+            <label class="field" data-measure="strem1">
+              <span>sTREM-1 <small>pg/mL</small></span>
+              <input name="strem1" type="number" min="0" max="10000" step="0.1" inputmode="decimal" placeholder="For example, 227">
+            </label>
+            <label class="field" data-measure="crp">
+              <span>C-reactive protein <small>mg/L</small></span>
+              <input name="crp" type="number" min="0" max="1000" step="0.01" inputmode="decimal" placeholder="For example, 13.2">
+            </label>
+            <label class="field" data-measure="glucose">
+              <span>Glucose <small>mmol/L</small></span>
+              <input name="glucose" type="number" min="0" max="50" step="0.01" inputmode="decimal" placeholder="For example, 5.4">
+            </label>
+          </div>
+        </div>
+
+        <div class="action-area action-row">
+          <button id="stage2-submit" class="primary-button" type="submit">Calculate Stage 2</button>
+          <button id="compare-button" class="secondary-button" type="button">Compare Stage 2 Strategies</button>
+          <p id="stage2-error" class="error" role="alert" hidden></p>
+        </div>
+      </form>
+
+      <!-- Stage 2 prediction result —- -->
+
+      <section id="stage2-result" class="result-panel" aria-live="polite" hidden>
+        <div class="result-summary">
+          <div>
+            <p class="result-label">Stage 2 probability</p>
+            <p id="stage2-probability" class="probability">—</p>
+          </div>
+          <div class="classification-result">
+            <p id="stage2-classification" class="zone-badge" aria-label="Classification">—</p>
+          </div>
+          <p id="stage2-strategy-result" class="strategy-result"></p>
+          <p id="stage2-explanation" class="result-explanation"></p>
+          <p id="stage2-imputation" class="imputation-note" hidden></p>
+        </div>
+        <div class="result-actions">
+          <button id="recalculate-stage2" class="primary-button" type="button">Change Stage Two strategy</button>
+          <button id="new-assessment" class="text-button" type="button">New assessment</button>
+        </div>
+      </section>
+
+      <!-- Compatible-strategy comparison dialog —- -->
+
+      <section id="comparison" class="comparison" role="dialog" aria-modal="true" aria-labelledby="comparison-heading" hidden>
+        <div class="comparison-card">
+          <div class="comparison-heading">
+            <div>
+              <p class="result-label">Stage 2</p>
+              <h3 id="comparison-heading">Compatible strategies</h3>
+            </div>
+            <button id="comparison-close" class="icon-button" type="button" aria-label="Close comparison">Close</button>
+          </div>
+          <div id="comparison-grid" class="comparison-grid"></div>
+        </div>
+      </section>
+
+      <button id="back-stage1" class="back-button" type="button">Back to Stage 1</button>
+    </section>
+  </main>
+
+  <!-- Research-use safety statement —- -->
+
+  <footer inert>
+    <div class="footer-utility">
+      <a class="github-link" href="https://github.com/lcmrhodes/selective-paediatric-fever-triage" target="_blank" rel="noreferrer" aria-label="View Spot Sepsis on GitHub">
+        <img src="./assets/github-mark.svg" alt="">
+      </a>
+      <span class="offline-note">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M10 2.5v9m0 0 3.2-3.2M10 11.5 6.8 8.3M4 14.5v1.25c0 .97.78 1.75 1.75 1.75h8.5c.97 0 1.75-.78 1.75-1.75V14.5" />
+        </svg>
+        Available offline
+      </span>
+    </div>
+    <p>Research demonstration only · Not validated for autonomous clinical use · Does not replace clinical assessment</p>
+    <button id="release-info" class="release-info" type="button" hidden>Model information</button>
+  </footer>
+</body>
+</html>

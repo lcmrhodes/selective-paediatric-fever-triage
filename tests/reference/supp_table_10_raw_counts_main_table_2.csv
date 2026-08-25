@@ -1,0 +1,25 @@
+Strategy,Metric,Raw n/N
+Stage 1 + oxygen saturation,All Stage 1 Amber to Green,0/122
+Stage 1 + oxygen saturation,All Stage 1 Amber retained Amber,88/122
+Stage 1 + oxygen saturation,All Stage 1 Amber to Red,34/122
+Stage 1 + oxygen saturation,Severe Stage 1 Amber to Green,0/7
+Stage 1 + oxygen saturation,Severe Stage 1 Amber retained Amber,4/7
+Stage 1 + oxygen saturation,Severe Stage 1 Amber to Red,3/7
+Stage 1 + sTREM-1,All Stage 1 Amber to Green,0/122
+Stage 1 + sTREM-1,All Stage 1 Amber retained Amber,74/122
+Stage 1 + sTREM-1,All Stage 1 Amber to Red,48/122
+Stage 1 + sTREM-1,Severe Stage 1 Amber to Green,0/7
+Stage 1 + sTREM-1,Severe Stage 1 Amber retained Amber,2/7
+Stage 1 + sTREM-1,Severe Stage 1 Amber to Red,5/7
+Stage 1 + CRP + sTREM-1,All Stage 1 Amber to Green,4/122
+Stage 1 + CRP + sTREM-1,All Stage 1 Amber retained Amber,79/122
+Stage 1 + CRP + sTREM-1,All Stage 1 Amber to Red,39/122
+Stage 1 + CRP + sTREM-1,Severe Stage 1 Amber to Green,0/7
+Stage 1 + CRP + sTREM-1,Severe Stage 1 Amber retained Amber,6/7
+Stage 1 + CRP + sTREM-1,Severe Stage 1 Amber to Red,1/7
+Stage 1 + CRP + sTREM-1 + glucose,All Stage 1 Amber to Green,9/122
+Stage 1 + CRP + sTREM-1 + glucose,All Stage 1 Amber retained Amber,63/122
+Stage 1 + CRP + sTREM-1 + glucose,All Stage 1 Amber to Red,50/122
+Stage 1 + CRP + sTREM-1 + glucose,Severe Stage 1 Amber to Green,0/7
+Stage 1 + CRP + sTREM-1 + glucose,Severe Stage 1 Amber retained Amber,2/7
+Stage 1 + CRP + sTREM-1 + glucose,Severe Stage 1 Amber to Red,5/7

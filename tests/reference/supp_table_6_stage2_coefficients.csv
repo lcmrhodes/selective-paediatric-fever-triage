@@ -1,0 +1,24 @@
+Strategy,Term,Coefficient,Standard error,p value
+Stage 1 + SpO2,(Intercept),28.0054765,2.5831101,2.18e-27
+Stage 1 + SpO2,oxy.ra,-0.2802143,0.0266759,8.24e-26
+Stage 1 + sTREM-1,(Intercept),-0.3305738,0.1250973,0.00823
+Stage 1 + sTREM-1,sTREM1,0.0034266,0.0002303,4.54e-50
+Stage 1 + CRP + sTREM-1,(Intercept),-0.5991166,0.1440452,3.19e-05
+Stage 1 + CRP + sTREM-1,CRP,0.0088300,0.0008328,2.9e-26
+Stage 1 + CRP + sTREM-1,sTREM1,0.0026979,0.0002897,1.25e-20
+Stage 1 + CRP + sTREM-1 + glucose,(Intercept),-2.1926983,0.3748992,4.95e-09
+Stage 1 + CRP + sTREM-1 + glucose,CRP,0.0086598,0.0008490,1.98e-24
+Stage 1 + CRP + sTREM-1 + glucose,sTREM1,0.0026931,0.0003238,8.99e-17
+Stage 1 + CRP + sTREM-1 + glucose,glucose,0.2709149,0.0565595,1.67e-06
+Stage 1 + SpO2 + sTREM-1,(Intercept),29.9959505,2.7053780,1.44e-28
+Stage 1 + SpO2 + sTREM-1,oxy.ra,-0.3131851,0.0281199,8.24e-29
+Stage 1 + SpO2 + sTREM-1,sTREM1,0.0037543,0.0002428,6.44e-54
+Stage 1 + SpO2 + sTREM-1 + CRP,(Intercept),27.0058924,2.8916021,9.69e-21
+Stage 1 + SpO2 + sTREM-1 + CRP,oxy.ra,-0.2850159,0.0300112,2.16e-21
+Stage 1 + SpO2 + sTREM-1 + CRP,sTREM1,0.0030831,0.0002965,2.5e-25
+Stage 1 + SpO2 + sTREM-1 + CRP,CRP,0.0078648,0.0008495,2.08e-20
+Stage 1 + SpO2 + sTREM-1 + CRP + glucose,(Intercept),24.5819529,2.9299220,4.86e-17
+Stage 1 + SpO2 + sTREM-1 + CRP + glucose,oxy.ra,-0.2752929,0.0299844,4.26e-20
+Stage 1 + SpO2 + sTREM-1 + CRP + glucose,sTREM1,0.0030848,0.0003289,6.72e-21
+Stage 1 + SpO2 + sTREM-1 + CRP + glucose,CRP,0.0077818,0.0008617,1.7e-19
+Stage 1 + SpO2 + sTREM-1 + CRP + glucose,glucose,0.2489839,0.0581622,1.86e-05

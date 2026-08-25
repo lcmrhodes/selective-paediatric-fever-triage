@@ -1,0 +1,8 @@
+Strategy,Primary AUROC,Diagnostic AUROC,AUROC difference,"Primary Green/Amber/Red, n","Diagnostic Green/Amber/Red, n","Primary severe Green, n","Diagnostic severe Green, n",Diagnostic
+Stage 1 + oxygen saturation,0.955,0.956,0.002,552/88/184,552/87/185,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + sTREM-1,0.954,0.954,0.000,552/74/198,552/74/198,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + CRP + sTREM-1,0.951,0.951,0.000,556/79/189,556/79/189,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + CRP + sTREM-1 + glucose,0.952,0.952,0.000,561/63/200,561/63/200,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + oxygen saturation + sTREM-1,0.956,0.957,0.001,571/72/181,571/70/183,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + oxygen saturation + sTREM-1 + CRP,0.953,0.954,0.001,578/70/176,578/70/176,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable
+Stage 1 + oxygen saturation + sTREM-1 + CRP + glucose,0.955,0.956,0.001,579/60/185,579/59/186,2,2,Outcome-stratified derivation-median imputation; fixed models; non-deployable

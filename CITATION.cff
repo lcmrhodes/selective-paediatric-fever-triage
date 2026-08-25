@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the manuscript and repository."
+title: "Spot Sepsis Stage 2: reproducibility package and prediction site"
+version: 1.0.0
+date-released: 2026-08-24
+license: MIT
+authors:
+  - family-names: Rhodes
+    given-names: Luke Charles Miller
+  - family-names: Chandna
+    given-names: Arjun
+  - family-names: Lubell
+    given-names: Yoel
+  - family-names: Burza
+    given-names: Sakib
+repository-code: "https://github.com/lcmrhodes/selective-paediatric-fever-triage"
+preferred-citation:
+  type: article
+  title: "Selective augmentation for traffic-light triage of paediatric febrile illness: external validation in a prospective multicountry cohort"
+  authors:
+    - family-names: Rhodes
+      given-names: Luke Charles Miller
+    - family-names: Chandna
+      given-names: Arjun
+    - family-names: Lubell
+      given-names: Yoel
+    - family-names: Burza
+      given-names: Sakib
+  year: 2026
